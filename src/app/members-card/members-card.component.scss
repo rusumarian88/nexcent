@@ -1,0 +1,47 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    width: 100%;
+    display: inline-block;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap:16px;
+}
+
+.icon{
+    width:48px;
+}
+
+.number{
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 700;
+    color: rgba(77, 77, 77, 1);
+}
+
+.text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(113, 113, 113, 1);
+}
+
+@media screen and (max-width:$max-width-break-point) {
+    .icon{
+        width: 34px;
+    }
+    .number{
+        font-size: 20px;
+    }
+    .text{
+        font-size: 12px;
+    }
+}

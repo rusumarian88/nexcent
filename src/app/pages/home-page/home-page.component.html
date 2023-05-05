@@ -1,0 +1,26 @@
+
+<app-heder></app-heder>
+<app-section-with-title title="Our Clients" subtitle="We have been working with some Fortune 500+ clients">
+    <div class="clients">
+        <img *ngFor="let c of clients" class="client" [src]="c">
+    </div>
+</app-section-with-title>
+<app-section-with-title title="Manage your entire community in a single system" subtitle="Who is Nextcent suitable for?">
+    <div class="community-cards">
+        <app-community-card class="community-card" *ngFor="let c of communityService.community" [icon]="c.icon" [title]="c.title" [description]="c.description"></app-community-card>
+    </div>
+</app-section-with-title>
+<app-section-with-image image="/assets/image-a.png" title="The unseen of spending three years at Pixelgrade" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio."></app-section-with-image>
+<app-section-members></app-section-members>
+<app-section-with-image image="/assets/image-b.png" title="How to design your site footer like we did" description="Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida."></app-section-with-image>
+<app-section-reviews></app-section-reviews>
+<app-section-with-title title="Caring is the new marketing" subtitle="The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​">
+    <div class="marketing-cards">
+        <app-marketing-card class="marketing-card" *ngFor="let m of marketingService.marketing" [photo]="m.photo" [info]="m.info" [text]="m.text" [icon]="m.icon"></app-marketing-card>
+    </div>
+</app-section-with-title>
+<div class="section-title-with-btn">
+    <div class="title">Pellentesque suscipit fringilla libero eu.</div>
+    <div class="btn">Get a Demo<span class="material-symbols-outlined icon">trending_flat</span></div>
+</div>
+<app-footer></app-footer>

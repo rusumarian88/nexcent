@@ -1,0 +1,18 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: inline-block;
+}
+
+.button{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    padding: 14px 32px;
+    border-radius: 4px;
+    background: rgba(76, 175, 79, 1);
+    cursor: pointer;
+}

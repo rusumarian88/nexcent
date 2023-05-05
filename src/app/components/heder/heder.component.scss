@@ -1,0 +1,90 @@
+
+@import "mixins";
+@import "variables";
+
+:host{
+    display: block;
+}
+
+.heder{
+    position: relative;
+    padding: 180px 0 96px;
+    background: rgba(245, 247, 250, 1);
+}
+
+.nav-bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:40px;
+    @include latime;
+}
+
+.left{
+    flex-grow: 1;
+    flex-basis: 1px;
+    min-width: 546px;
+}
+
+.right{
+    max-width: 390px;
+    margin: auto;
+}
+
+.img-heder{
+    width: 100%;
+}
+
+.title{
+    font-size: 64px;
+    line-height: 76px;
+    font-weight: 600;
+    color: rgba(77, 77, 77, 1);
+}
+
+.word-title{
+    color: rgba(76, 175, 79, 1);
+}
+
+.subtitle{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(113, 113, 113, 1);
+    margin: 16px 0 32px;
+}
+
+.icon-heder{
+    position: absolute;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@media screen and (max-width:$max-width-break-point){
+    .left{
+        text-align: center;
+        min-width:300px;
+    }
+    .title{
+        font-size: 48px;
+        line-height: 52px;
+    }
+    .subtitle{
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .heder{
+        padding: 120px 0 80px; 
+    }
+ }

@@ -1,0 +1,12 @@
+
+<div class="section">
+    <div class="content">
+        <div class="left">
+            <div class="title">Helping a local<br> <span class="word-title">business reinvent itself</span></div>
+            <div class="subtitle">We reached here with our hard work and dedication</div>
+        </div>
+        <div class="right">
+            <app-members-card class="members-card" *ngFor="let c of membersService.members" [icon]="c.icon" [number]="c.number" [text]="c.text" ></app-members-card>
+        </div>
+    </div>
+</div>
